@@ -20,6 +20,11 @@ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | 
 rm -rf ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
+# Install Virtualenv
+sudo apt-get install python3-pip python3-dev
+sudo pip3 install virtualenv virtualenvwrapper
+mkdir .virtualenvs
+
 # Replace zshrc
 rm -rf ~/.zshrc
 cp -R .zshrc ~/

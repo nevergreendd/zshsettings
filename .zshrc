@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/swchoi06/.oh-my-zsh"
+export ZSH="${HOME}/.oh-my-zsh"
 
 ZSH_THEME="ys"
 
@@ -21,6 +21,8 @@ alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # VirtualenvWrapper
+export WORKON_HOME=~/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=`which python3`
 source =virtualenvwrapper.sh
 
 # Zgen
@@ -40,3 +42,5 @@ fi
 alias sshapidev="ssh swchoi06@52.78.68.166"
 alias sshapipro="ssh swchoi06@52.78.136.59"
 alias sshsnatcher="ssh swchoi06@snatcher.snu.ac.kr"
+alias sshmoduflip-janus="ssh swchoi06@54.180.149.234"
+alias sshmoduflip-backend="ssh swchoi06@13.209.4.52"
